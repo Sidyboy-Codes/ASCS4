@@ -1,0 +1,115 @@
+#navbar {
+  z-index: 1001;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  color: #2d2d2d;
+  border-bottom: 1px solid #dadada;
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.lg__navbar {
+  display: none;
+}
+.sm__navbar {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    height: 100%;
+}
+
+.sm__navbar__menu {
+    z-index: 1000;
+    position: absolute;
+  background-color: #fffafa;
+  padding-top: 2rem;
+  height: calc(100vh - 6.1rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2rem;
+}
+
+.sm__navbar__menu .navbar__links {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.sm__navbar__menu .navbar__socials {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (width>=815px) {
+  #navbar {
+    padding: 1rem 2rem;
+  }
+  .sm__navbar {
+    display: none;
+  }
+
+  .sm__navbar__menu {
+    display: none;
+  }
+
+  .lg__navbar,
+  .lg__navbar__menu,
+  .navbar__links,
+  .menu__right,
+  .navbar__socials {
+    display: flex;
+    align-items: center;
+  }
+  .lg__navbar {
+    height: 4rem;
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
+  .lg__navbar__menu {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .lg__navbar__menu .navbar__links {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 24rem;
+    min-width: 22rem;
+  }
+  .lg__navbar__menu .menu__right {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 18rem;
+    min-width: 15rem;
+    gap: 1rem;
+  }
+
+  .menu__right .navbar__socials {
+    font-size: 1.4rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 8rem;
+  }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media (width>=1020px) {
+  #navbar {
+    padding: 1rem 4rem;
+  }
+}

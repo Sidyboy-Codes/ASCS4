@@ -1,0 +1,88 @@
+#footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer__heading{
+    text-align: center;
+}
+
+.footer__heading h1{
+    font-size: 2.2rem;
+}
+.footer__heading span{
+    color: rgb(218, 218, 218);
+}
+
+#footer .footer__form{
+    width: 20rem;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.form__grp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
+.form__grp input{
+    all: unset;
+    background-color:white ;
+    color: black;
+    
+    font-size: 1rem;
+    padding: 8px 10px;
+    border-radius: 4px;
+    
+}
+
+.form__radio label{
+font-size: 0.8rem;
+margin-left: 1rem;
+}
+
+.form__radio{
+    margin-bottom: 1rem;
+}
+
+.footer__form button{
+    font-weight: 500;
+    background-color: #ff4221;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer__links{
+    margin-bottom: 2rem;
+}
+.footer__links p{
+    font-size: 14px;
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    width: fit-content;
+}
+
+.footer__links p a{
+    color:#696969; 
+    text-decoration: underline;
+}
+
+.footer__socialMedia{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    gap: 1.4rem;
+    font-size: 1.4rem;
+    margin-bottom:2rem ;
+}
+
+.footer__copyRight{
+    text-align: center;
+    color: #bebebe;
+    margin: auto;
+}

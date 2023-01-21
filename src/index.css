@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/*
+ font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 62.5%;
+}
+
+a,ul,li,button{
+  all: unset;
+}
+
+h1,h2{
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1rem;
+  padding: 0;
+}
+
+button{
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 1.0rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}
+

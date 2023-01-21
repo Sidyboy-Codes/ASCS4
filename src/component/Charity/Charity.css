@@ -1,0 +1,63 @@
+.charity__container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+}
+
+.charity__card {
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.charity__card:nth-child(1) {
+  background-color: white;
+}
+
+.charity__card img {
+  width: clamp(14rem, 11.8182rem + 9.697vw, 18rem);
+  aspect-ratio: 6/2;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.charity__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 18rem;
+}
+.charity__text h1 {
+  font-size: 1.6rem;
+}
+.charity__text p {
+  font-size: 1rem;
+}
+
+.charity__card button {
+  background-color: #272727;
+  color: white;
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: max-content;
+}
+
+@media (width>=760px) {
+  .charity__container {
+    flex-direction: row;
+  }
+}
+
+@media (width>=1020px) {
+  .charity__card {
+    width: 90vw;
+    padding: 1rem 10rem;
+  }
+  .charity__card:nth-child(1) {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  }
+}

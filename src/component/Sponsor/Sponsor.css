@@ -1,0 +1,12 @@
+.sponsor {
+    background-color: #e5e5e5;
+    padding: 1.4rem 0;
+}
+
+.sponsor img{
+    width: 10rem;
+    aspect-ratio: 6/2;
+    object-fit: contain;
+    margin-left: 4rem;
+
+}
