@@ -10,7 +10,7 @@
 
 .team__container h1 {
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .team__carousel {
@@ -85,6 +85,6 @@ span {
 @media(width>=760px){
     .team__container h1 {
         font-size: 2.4rem;
-        font-style: italic;
+        /* font-style: italic; */
       }
 }

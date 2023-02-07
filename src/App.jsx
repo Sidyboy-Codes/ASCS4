@@ -1,29 +1,19 @@
-import './App.css'
-import About from './component/About/About'
-import Article from './component/Articles/Article'
-import Charity from './component/Charity/Charity'
-import Footer from './component/Footer/Footer'
-import Hero from './component/Hero/Hero'
-import Introduction from './component/Introduction/Introduction'
-import Navbar from './component/Navbar/Navbar'
-import Sponsor from './component/Sponsor/Sponsor'
-import Team from './component/Team/Team'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
 
 function App() {
-
   return (
-    <div className="App">
-      <Navbar/>
-      <Hero/>
-      <Sponsor/>
-      <Introduction/>
-      <About/>
-      <Charity/>
-      <Team/>
-      <Article/>
-      <Footer/>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

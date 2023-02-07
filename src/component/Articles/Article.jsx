@@ -13,7 +13,7 @@ const Article = () => {
       <h1>Recent News</h1>
       <div className="article__container">
         {[...Array(8)].map((x, i) => (
-          <a href="https://www.sportsnet.ca/nba/article/bold-basketball-predictions-for-2023-raptors-make-a-splash-as-trade-deadline-buyers/">
+          <a href="https://www.sportsnet.ca/nba/article/bold-basketball-predictions-for-2023-raptors-make-a-splash-as-trade-deadline-buyers/" key={i}>
             <div className="article__card">
               <div className="article__card__img">
                 <img src={tempArticle} />

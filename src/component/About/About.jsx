@@ -41,7 +41,6 @@ const About = () => {
       setTitleOpc(1);
     }
     scale = (pos / about__height) * zoomSpeed;
-    console.log(scale);
     setImgScale(scale);
 
 

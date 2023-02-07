@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -44,7 +45,7 @@ const Footer = () => {
           <span>|</span>
           <a href="">Terms & Conditions</a>
           <span>|</span>
-          <a href="">Contact</a>
+          <Link to="/contact">Contact</Link>
         </p>
       </div>
 

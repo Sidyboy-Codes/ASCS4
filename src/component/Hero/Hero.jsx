@@ -4,7 +4,7 @@ import "./Hero.css";
 
 
 // assets
-import khpLogo from '../../assets/Kids-Help-logo.svg';
+import khpLogo from '../../assets/KHP_Extended_EN-01.png';
 import mawLogo from '../../assets/Make-A-Wish-logo.svg';
 
 // libs

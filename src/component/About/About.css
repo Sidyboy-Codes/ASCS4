@@ -83,3 +83,9 @@
       max-width: 70vh;
     }
   }
+
+  @media(width>=1020px){
+    .about__title{
+      padding-left: 8rem;
+    }
+  }

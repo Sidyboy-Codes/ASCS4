@@ -5,7 +5,9 @@ import "./Team.css";
 import player from "../../assets/Temp-player.png";
 
 // libs
+import { useState } from "react";
 import { AiFillYoutube } from "react-icons/ai";
+import ModalVideo from "react-modal-video";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -32,13 +34,14 @@ const responsive = {
 };
 
 const Team = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <section id="team">
       <div className="team__container">
         <h1>Team Make A Wish</h1>
         <Carousel responsive={responsive} className="team__carousel">
-          {[...Array(10)].map((index) => (
-            <div className="player__card" key={index}>
+          {[...Array(10)].map((item,i) => (
+            <div className="player__card" key={i}>
               <div className="player__card__header">
                 <img src={player} />
                 <span>Bernard James</span>
@@ -56,7 +59,7 @@ const Team = () => {
                 <p>
                   Accolades: <span></span>
                 </p>
-                <span className="yt__link">
+                <span className="yt__link" onClick={() => setOpen(!isOpen)}>
                   <AiFillYoutube size={26} />
                   Highlights
                 </span>
@@ -64,13 +67,14 @@ const Team = () => {
             </div>
           ))}
         </Carousel>
+        <ModalVideo channel="youtube" isOpen={isOpen} videoId="1fjhIWJSxfw" onClose={() => setOpen(false)} autoplay />
       </div>
 
       <div className="team__container">
         <h1>Team Kids Help Phone</h1>
         <Carousel responsive={responsive} className="team__carousel">
-          {[...Array(10)].map((index) => (
-            <div className="player__card" key={index}>
+          {[...Array(10)].map((item,i) => (
+            <div className="player__card" key={i}>
               <div className="player__card__header">
                 <img src={player} />
                 <span>Bernard James</span>
@@ -88,7 +92,7 @@ const Team = () => {
                 <p>
                   Accolades: <span></span>
                 </p>
-                <span className="yt__link">
+                <span className="yt__link" onClick={() => setOpen(!isOpen)}>
                   <AiFillYoutube size={26} />
                   Highlights
                 </span>
@@ -96,6 +100,7 @@ const Team = () => {
             </div>
           ))}
         </Carousel>
+        <ModalVideo channel="youtube" isOpen={isOpen} videoId="1fjhIWJSxfw" onClose={() => setOpen(false)} autoplay />
       </div>
     </section>
   );

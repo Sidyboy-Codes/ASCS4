@@ -8,30 +8,29 @@ import logo from "../../assets/ASCS-logo.svg";
 // lib
 import Hamburger from "hamburger-react";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-
+import { Link } from "react-router-dom";
 
 // ****** Things left. **************
 
 // ticket page link, Social media links
 
-
 const Menu = (props) => {
   return (
     <ul className="navbar__links">
       <li onClick={() => props.setOpen(false)}>
-        <a href="#about">About</a>
+        <a href="./#about">About</a>
       </li>
       <li onClick={() => props.setOpen(false)}>
-        <a href="#charity">Charities</a>
+        <a href="/#charity">Charities</a>
       </li>
       <li onClick={() => props.setOpen(false)}>
-        <a href="#team">Teams</a>
+        <a href="/#team">Teams</a>
       </li>
       <li onClick={() => props.setOpen(false)}>
-        <a href="article">Articles</a>
+        <a href="/#article">Articles</a>
       </li>
       <li onClick={() => props.setOpen(false)}>
-        <a href="contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
       <li onClick={() => props.setOpen(false)}>
         <a href="/">Shop</a>
@@ -70,13 +69,17 @@ const Navbar = () => {
       <nav id="navbar">
         {/* Small screen navbar */}
         <div className="sm__navbar">
-          <img src={logo} alt="all star charity shootout logo" />
+        <a href="/" className="logo__link">
+            <img src={logo} alt="all star charity shootout logo" />
+          </a>
           <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
         </div>
 
         {/* large screen navbar */}
         <div className="lg__navbar">
-          <img src={logo} alt="ascs logo" />
+          <a href="/" className="logo__link">
+            <img src={logo} alt="all star charity shootout logo" />
+          </a>
           <div className="lg__navbar__menu">
             <Menu />
             <div className="menu__right">

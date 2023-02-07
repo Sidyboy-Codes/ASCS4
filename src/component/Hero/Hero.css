@@ -10,7 +10,7 @@ background-image: url('../../assets/gray-basketball.svg');
 background-repeat: no-repeat;
 background-position: center;
 
-background-size: clamp(30rem, 24.5455rem + 24.2424vw, 40rem);
+background-size : clamp(34rem, 30.7273rem + 14.5455vw, 40rem);
 }
 
 .hero__header {
@@ -18,22 +18,24 @@ background-size: clamp(30rem, 24.5455rem + 24.2424vw, 40rem);
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  padding-top:2.2rem;
 }
 
 .hero__header h1 {
-  font-size: clamp(2rem, 0.3636rem + 7.2727vw, 5rem);
+  font-size: clamp(2.5rem, 1.1364rem + 6.0606vw, 5rem);
   text-transform: uppercase;
-  /* font-style: italic; */
-
 }
+
 .hero__header h2 {
-  font-size: clamp(1.6rem, 0.5636rem + 4.6061vw, 3.5rem);
+  font-size: clamp(2rem, 1.1818rem + 3.6364vw, 3.5rem);
   text-transform: uppercase;
   line-height: 1.4rem;
 }
 .hero__header span {
-  font-size: clamp(1rem, 0.5636rem + 1.9394vw, 1.8rem);
+  font-size: clamp(1.6rem, 1.4909rem + 0.4848vw, 1.8rem);
   text-transform: capitalize;
+  font-family: 'Bebas Neue', cursive;
+
 }
 
 .hero__body {
@@ -51,7 +53,7 @@ background-size: clamp(30rem, 24.5455rem + 24.2424vw, 40rem);
 
 .hero__body span {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 800;
   color: #e64524;
   padding: 1.2rem 0;
   position: relative;
@@ -95,6 +97,9 @@ background-size: clamp(30rem, 24.5455rem + 24.2424vw, 40rem);
 
 /* ++++++++++++++++++++++++++++++++++++++++++ */
 @media (width>=760px) {
+  #hero{
+    gap: 2rem;
+  }
   .hero__body {
     flex-direction: row;
   }

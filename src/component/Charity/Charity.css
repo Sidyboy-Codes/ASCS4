@@ -36,6 +36,13 @@
 }
 
 .charity__card button {
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 1.0rem;
+  align-items: center;
+  cursor: pointer;
+  
   background-color: #272727;
   color: white;
   border-radius: 10px;
@@ -44,9 +51,13 @@
   font-weight: 500;
   cursor: pointer;
   width: max-content;
+  margin-bottom: 3rem;
 }
 
 @media (width>=760px) {
+  .charity__card:nth-child(1){
+    padding-left: 4rem;
+  }
   .charity__container {
     flex-direction: row;
   }
@@ -55,9 +66,11 @@
 @media (width>=1020px) {
   .charity__card {
     width: 90vw;
-    padding: 1rem 10rem;
   }
   .charity__card:nth-child(1) {
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  }
+  .charity__text{
+    width: 85%;
   }
 }

@@ -1,4 +1,11 @@
 .ticket__btn{
+    display: flex;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 1.0rem;
+    align-items: center;
+    cursor: pointer;
+
     background-color: #272722;
     color: white;
     padding: 0.6rem 1rem;

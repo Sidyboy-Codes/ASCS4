@@ -19,8 +19,16 @@
     align-items: center;
     justify-content: space-between;
 }
+
+nav .logo__link{
+  height: 100%;
+}
 nav img {
     height: 100%;
+}
+
+.navbar__links li:hover{
+  color: red;
 }
 
 .sm__navbar__menu {

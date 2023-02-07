@@ -15,11 +15,11 @@ import Marquee from "react-fast-marquee";
 const Sponsor = () => {
   return (
     <Marquee className="sponsor" gradient={false}>
-      {Array.from({ length: 6 }).map((_, index) => (
+      {Array.from({ length: 6 }).map((item, i) => (
         <>
-        <img src={temp1Logo} alt="" key={index}/>
-        <img src={temp2Logo} alt="" key={index}/>
-        <img src={temp3Logo} alt="" key={index}/>
+        <img src={temp1Logo} alt="" />
+        <img src={temp2Logo} alt="" />
+        <img src={temp3Logo} alt="" />
         </>
       ))}
     </Marquee>
