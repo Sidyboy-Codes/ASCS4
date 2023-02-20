@@ -91,10 +91,50 @@
 font-size: 2rem;
   }
 
+  .intro__guest__card__text span{
+    font-size: 2rem;
+  }
+
   .intro__guest__card__text p{
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
+
+  .react-responsive-modal-modal{
+    margin-top: 10rem ;
+  }
+
+.guest__modal{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+  }
+
+  .guest__modal .guest__modal-img img{ 
+    background-color: orangered;
+    aspect-ratio: 2/3;
+    width: 100%;
+    object-fit: cover;
+  }
+  .guest__modal-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   /* +++++++++++++++++++++++++++++++++++++++++++++++ */
+  @media(width>425px){
+    .guest__modal .guest__modal-img img{ 
+      width: 50%;
+    }
+  }
   @media(width>=760px){
     .intro__video{
       flex-direction: row;
@@ -114,9 +154,13 @@ font-size: 2rem;
       margin: unset;
     }
     .intro__guest__card__text{
-      text-align: left;
+      /* text-align: left; */
       margin: unset;
       max-width: 22rem;
+      cursor: pointer;
+    }
+    .guest__modal .guest__modal-img img{ 
+      width: 40%;
     }
 }
 

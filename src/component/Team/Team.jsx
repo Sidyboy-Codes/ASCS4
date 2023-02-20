@@ -39,7 +39,7 @@ const Team = () => {
     <section id="team">
       <div className="team__container">
         <h1>Team Make A Wish</h1>
-        <Carousel responsive={responsive} className="team__carousel">
+        {/* <Carousel responsive={responsive} className="team__carousel">
           {[...Array(10)].map((item,i) => (
             <div className="player__card" key={i}>
               <div className="player__card__header">
@@ -66,13 +66,14 @@ const Team = () => {
               </div>
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
+        <h2>To Be Announced...</h2>
         <ModalVideo channel="youtube" isOpen={isOpen} videoId="1fjhIWJSxfw" onClose={() => setOpen(false)} autoplay />
       </div>
 
       <div className="team__container">
         <h1>Team Kids Help Phone</h1>
-        <Carousel responsive={responsive} className="team__carousel">
+        {/* <Carousel responsive={responsive} className="team__carousel">
           {[...Array(10)].map((item,i) => (
             <div className="player__card" key={i}>
               <div className="player__card__header">
@@ -99,7 +100,8 @@ const Team = () => {
               </div>
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
+        <h2>To Be Announced...</h2>
         <ModalVideo channel="youtube" isOpen={isOpen} videoId="1fjhIWJSxfw" onClose={() => setOpen(false)} autoplay />
       </div>
     </section>

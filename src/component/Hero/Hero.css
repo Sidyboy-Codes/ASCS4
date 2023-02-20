@@ -1,16 +1,27 @@
 #hero {
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   height: calc(100vh - 6.1rem + 1px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 
-background-image: url('../../assets/gray-basketball.svg');
+/* background-image: url('../../assets/gray-basketball.svg'); */
 background-repeat: no-repeat;
 background-position: center;
 
 background-size : clamp(34rem, 30.7273rem + 14.5455vw, 40rem);
+}
+
+.hero_video{
+  height: 100vh;
+  width: 100%;
+}
+#hero_bgVideo{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
 }
 
 .hero__header {
